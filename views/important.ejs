@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classical Music Theory Guide</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #eaf7ea;
+  color: #059652;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 50, 0, 0.15);
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #059652, #059652);
+  color: white;
+}
+
+.title h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.lead {
+  opacity: 0.9;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.music-icon img {
+  width: 90px;
+  filter: brightness(100%);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+article h2 {
+  margin: 20px 0 8px;
+  color: #059652;
+}
+
+ul, ol {
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+.code {
+  background: #e1f2e1;
+  border-left: 4px solid #059652;
+  padding: 12px;
+  white-space: pre-wrap;
+  border-radius: 8px;
+}
+
+.callout {
+  background: #d9eed9;
+  padding: 15px;
+  border-left: 4px solid #059652;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.note {
+  margin-top: 30px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.aside h3 {
+  margin: 15px 0 10px;
+  color: #059652;
+}
+
+.aside {
+  background: #f3fbf3;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #cde6cd;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #059652;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #059652;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .music-icon img {
+    margin-top: 20px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #eaf7ea;
+  color: #059652;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 50, 0, 0.15);
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #059652, #059652);
+  color: white;
+}
+
+.title h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.lead {
+  opacity: 0.9;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.music-icon img {
+  width: 90px;
+  filter: brightness(100%);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+article h2 {
+  margin: 20px 0 8px;
+  color: #059652;
+}
+
+ul, ol {
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+.code {
+  background: #e1f2e1;
+  border-left: 4px solid #059652;
+  padding: 12px;
+  white-space: pre-wrap;
+  border-radius: 8px;
+}
+
+.callout {
+  background: #d9eed9;
+  padding: 15px;
+  border-left: 4px solid #059652;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.note {
+  margin-top: 30px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.aside h3 {
+  margin: 15px 0 10px;
+  color: #059652;
+}
+
+.aside {
+  background: #f3fbf3;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #cde6cd;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #059652;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #059652;
+  opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .music-icon img {
+    margin-top: 20px;
+  }
+}
+  
+  </style>
+
+  
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="hero">
+        <div class="title">
+          <span class="badge">Guide • Classical Music Theory</span>
+          <h1>The Importance of Music Theory in Classical Performance</h1>
+          <p class="lead">From sheet music interpretation to orchestral communication — music theory is the backbone of classical mastery.</p>
+        </div>
+
+        <div class="music-icon" aria-hidden="true">
+          <img src="assets/img/music-icon.png" alt="Sheet Music Icon" />
+        </div>
+      </div>
+
+      <div class="content">
+        <article>
+          <h2>Short Answer</h2>
+          <p>Classical musicians rely on music theory to understand notation, interpret composers’ intentions, and perform with stylistic accuracy across various instruments — from strings and winds to percussion and keyboard.</p>
+
+          <h2>Why It Matters in Classical Music</h2>
+          <ul>
+            <li><strong>Sheet Music Interpretation:</strong> Theory helps you read complex rhythms, dynamics, articulations, and phrasing markings with confidence.</li>
+            <li><strong>Ensemble Synchronization:</strong> Knowing harmonic structure and form improves coordination in orchestras and chamber groups.</li>
+            <li><strong>Stylistic Awareness:</strong> Understanding periods (Baroque, Classical, Romantic, Modern) guides proper performance technique.</li>
+            <li><strong>Instrument Versatility:</strong> Whether violin, flute, cello, trumpet, or piano — theory informs fingerings, bowings, breath control, and harmonic placement.</li>
+            <li><strong>Score Analysis:</strong> Musicians can interpret motifs, counterpoint, cadences, and orchestration choices.</li>
+          </ul>
+
+          <h2>Common Misconceptions</h2>
+          <ul>
+            <li><strong>Theory is too rigid:</strong> In truth, composers used theory creatively — it gives structure, not restrictions.</li>
+            <li><strong>Only composers need theory:</strong> Performers use theory every time they read a score or play in an ensemble.</li>
+            <li><strong>Classical musicians only follow rules:</strong> Interpretation requires informed creativity, shaped by theoretical understanding.</li>
+          </ul>
+
+          <h2>Practical Classical Exercises</h2>
+          <ul>
+            <li><strong>Score Marking:</strong> Analyze cadences, themes, and modulations on your sheet music.</li>
+            <li><strong>Interval Training:</strong> Develop pitch accuracy for orchestral tuning and sight‑singing.</li>
+            <li><strong>Orchestral Listening:</strong> Follow a full score while listening — identify instrument entries.</li>
+            <li><strong>Counterpoint Practice:</strong> Try writing simple two‑part counterpoint to understand melodic independence.</li>
+          </ul>
+
+          <h2>Quick Reference</h2>
+          <pre class="code">Classical Cadence Types:
+- Perfect Authentic Cadence (V – I)
+- Imperfect Authentic Cadence
+- Plagal Cadence (IV – I)
+- Half Cadence (ending on V)
+- Deceptive Cadence (V – vi)
+          </pre>
+
+          <div class="callout">
+            <strong>Tip:</strong> Focus on reading, intervals, and harmonic function — these unlock expressive classical performance.
+          </div>
+
+          <h2>Putting It Together</h2>
+          <p>Theory connects musicians across centuries. From Bach's counterpoint to Beethoven's motifs, it gives classical performers depth, precision, and interpretive power.</p>
+
+          <footer class="note">Written for musicians of all levels — from orchestral beginners to solo recitalists.</footer>
+        </article>
+
+        <aside class="aside">
+          <h3>Quick Checklist</h3>
+          <ul>
+            <li>Know key signatures and classical scales</li>
+            <li>Study musical forms (sonata, minuet, fugue)</li>
+            <li>Practice sight‑reading daily</li>
+            <li>Analyze a classical score weekly</li>
+            <li>Learn instrument ranges and roles</li>
+          </ul>
+
+          <h3>Sample Practice Routine</h3>
+          <ol>
+            <li>10 min: Solfege + interval training</li>
+            <li>15 min: Scale & arpeggio studies (instrument specific)</li>
+            <li>20 min: Score analysis or repertoire reading</li>
+          </ol>
+
+          <a class="cta" href="https://wa.me/+2348089182986">Start Classical Routine</a>
+        </aside>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
